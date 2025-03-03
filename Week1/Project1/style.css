@@ -1,5 +1,39 @@
-ul li{
-    list-style: none;
-    padding: 5px;
-    font-size: large;
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
 }
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+.button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.container {
+    display: flex;
+    justify-content: center; /* Ortaya hizalar */
+    align-items: center; /* Dikey ortalama */
+}
+

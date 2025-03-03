@@ -39,9 +39,41 @@
         max="100"
       /><br /><br />
 
+      <label for="range">Cinsiyet:</label><br /><br />
+      <label>Erkek</label>
+      <input type="range" id="range" name="range" min="0" max="100" /><label
+        >Kadın</label
+      ><br /><br />
+
       <input type="color" id="color" name="color" /><br /><br />
 
+      <label for="sehir">Şehrinizi Seçin:</label>
+      <select id="sehir" name="sehir">
+        <option value="istanbul">İstanbul</option>
+        <option value="ankara">Ankara</option>
+        <option value="izmir">İzmir</option></select
+      ><br /><br />
+
       <button type="submit">Gönder</button>
+    </form>
+    <hr />
+    <form>
+      <p>Cinsiyetinizi seçin:</p>
+      <input type="radio" id="erkek" name="cinsiyet" value="erkek" />
+      <label for="erkek">Erkek</label>
+
+      <input type="radio" id="kadin" name="cinsiyet" value="kadin" />
+      <label for="kadin">Kadın</label>
+
+      <p>Hobileriniz:</p>
+      <input type="checkbox" id="spor" name="hobi" value="spor" />
+      <label for="spor">Spor</label>
+
+      <input type="checkbox" id="muzik" name="hobi" value="muzik" />
+      <label for="muzik">Müzik</label>
+
+      <br /><br />
+      <input type="submit" value="Gönder" />
     </form>
   </body>
 </html>

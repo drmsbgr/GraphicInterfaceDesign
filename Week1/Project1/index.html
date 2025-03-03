@@ -1,62 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kişisel Web Sayfası</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Web Sayfası Başlığı</title>
-    <script>
-      function setLabel() {
-        var label = document.getElementById("test");
-        label.innerHTML = "UYARI!!";
-      }
-
-      function clearLabel() {
-        var label = document.getElementById("test");
-        label.innerHTML = "";
-      }
-    </script>
+    <script src="script.js"></script>
   </head>
-  <!--yorum satırı-->
   <body>
-    <h1 id="test"></h1>
-    <br />
-    <input type="button" value="Uyarı Yap" onclick="setLabel()" /><br />
-    <input type="button" value="Temizle" onclick="clearLabel()" />
+    <header>
+      <h1>Hoş Geldiniz!</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Ana Sayfa</a></li>
+        <li><a href="#">Hakkımda</a></li>
+        <li><a href="#">İletişim</a></li>
+      </ul>
+    </nav>
+    <main>
+      <p>Bu sayfa CSS kullanılarak oluşturulmuştur.</p>
+      <div class="container">
+        <div class="kutu">1</div>
+        <div class="kutu">2</div>
+        <div class="kutu">3</div>
+      </div>
 
-    <ul>
-      <li>Elma</li>
-      <li>Armut</li>
-      <li>Portakal</li>
-    </ul>
-    <ol>
-      <li>H</li>
-      <li>H<sub>2</sub></li>
-      <li>CH<sub>4</sub></li>
-    </ol>
-    <h3><a target="_blank" href="https://www.google.com.tr">görüsürüz</a></h3>
-    <h3><a target="_blank" href="https://www.samsun.edu.tr">samü</a></h3>
-    <div>
-      <h2>Portakal</h2>
-      <img src="orange.jpg" alt="Portakal" width="128px" />
-    </div>
-    <table border="2">
-      <tr>
-        <th>Ad</th>
-        <th>Soyad</th>
-      </tr>
-      <tr>
-        <td>Buğra</td>
-        <td>DURMUŞ</td>
-      </tr>
-      <tr>
-        <td>Mustafa</td>
-        <td>ŞAHİN</td>
-      </tr>
-      <tr>
-        <td>Berkay</td>
-        <td>AŞIKOĞLU</td>
-      </tr>
-    </table>
+      <input
+        type="button"
+        class="button"
+        id="colorButton"
+        value="Beni Tıkla"
+        onclick="getRandomColor()"
+      />
+    </main>
   </body>
 </html>
