@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Sayfası Başlığı</title>
+    <script>
+      function setLabel() {
+        var label = document.getElementById("test");
+        label.innerHTML = "UYARI!!";
+      }
+
+      function clearLabel() {
+        var label = document.getElementById("test");
+        label.innerHTML = "";
+      }
+    </script>
+  </head>
+  <!--merhaba-->
+  <body>
+    <h1 id="test"></h1>
+    <br />
+    <input type="button" value="Uyarı Yap" onclick="setLabel()" /><br />
+    <input type="button" value="Temizle" onclick="clearLabel()" />
+
+    <ul>
+      <li>Elma</li>
+      <li>Armut</li>
+      <li>Portakal</li>
+    </ul>
+    <ol>
+      <li>H</li>
+      <li>H<sub>2</sub></li>
+      <li>CH<sub>4</sub></li>
+    </ol>
+    <h3><a target="_blank" href="https://www.google.com.tr">görüsürüz</a></h3>
+    <h3><a target="_blank" href="https://www.samsun.edu.tr">samü</a></h3>
+  </body>
+</html>
