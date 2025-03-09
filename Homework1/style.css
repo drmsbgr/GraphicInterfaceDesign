@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  width: 100%;
+  background-color: rgb(30, 47, 53);
+  overflow: auto;
+}
+
+.menu a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 12px;
+  width: 25%;
+  text-align: center;
+}
+
+.menu a:hover {
+  background-color: #000;
+}
+
+.content {
+  background-color: #89d6e9;
+  overflow: auto;
+}
+
+.content .text-area {
+  margin: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .menu a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
